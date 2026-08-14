@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>4H Beweging</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4H - Beweging</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+        }
+
+        .header {
+            background: #2563eb;
+            color: white;
+            padding: 45px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        .header p {
+            margin: 12px 0 0;
+            font-size: 19px;
+        }
+
+        main {
+            padding: 40px 20px 60px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #dbe3ec;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .card p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #52627a;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .info {
+            margin-top: 25px;
+            padding: 18px;
+            background: #eef6ff;
+            border-radius: 12px;
+            color: #28527a;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>4H - Beweging</h1>
-    <p>Dit werkt!</p>
+
+    <div class="header">
+        <div class="container">
+            <h1>4H – Beweging</h1>
+            <p>Oefenen met a-t, v-t en x-t diagrammen</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+
+            <div class="card">
+                <h2>Diagrammen omzetten</h2>
+
+                <p>
+                    In deze opdracht oefen je met het omzetten en interpreteren
+                    van <strong>a-t</strong>, <strong>v-t</strong> en
+                    <strong>x-t</strong> diagrammen.
+                </p>
+
+                <p>
+                    Gebruik de interactieve diagrammen om te onderzoeken
+                    hoe versnelling, snelheid en plaats met elkaar samenhangen.
+                </p>
+
+                <a class="button" href="diagrammen.html">
+                    🚀 Open de interactieve diagrammen →
+                </a>
+
+                <div class="info">
+                    <strong>Tip:</strong> Kijk goed naar de helling van een
+                    grafiek en naar de oppervlakte onder een grafiek.
+                </div>
+            </div>
+
+        </div>
+    </main>
+
 </body>
 </html>
