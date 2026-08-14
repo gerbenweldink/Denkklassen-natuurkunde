@@ -15,104 +15,97 @@
       margin: 0;
       background: #f4f7fb;
       color: #172033;
-      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     header {
       background: linear-gradient(135deg, #172554, #2563eb);
       color: white;
-      padding: 46px 20px 52px;
+      padding: 50px 20px;
     }
 
-    .wrap {
+    .container {
       max-width: 1050px;
       margin: auto;
     }
 
-    .eyebrow {
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: .12em;
+    .label {
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      opacity: .8;
-      margin-bottom: 10px;
+      opacity: 0.8;
     }
 
     h1 {
-      font-size: clamp(40px, 7vw, 58px);
-      line-height: 1.05;
-      margin: 0;
+      font-size: 56px;
+      margin: 10px 0;
     }
 
     .intro {
-      font-size: 19px;
-      max-width: 720px;
-      margin: 14px 0 0;
-      opacity: .94;
+      font-size: 20px;
+      max-width: 700px;
     }
 
     main {
-      padding: 34px 20px 70px;
+      max-width: 1050px;
+      margin: auto;
+      padding: 35px 20px 70px;
     }
 
-    .section-title {
-      font-size: 22px;
-      margin: 0 0 16px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
+    .title {
+      font-size: 26px;
+      margin-bottom: 18px;
     }
 
     .card {
       display: block;
+      max-width: 650px;
       background: white;
       border: 1px solid #dbe3ec;
       border-radius: 20px;
-      padding: 25px;
-      color: inherit;
+      padding: 28px;
       text-decoration: none;
-      box-shadow: 0 8px 28px rgba(15, 23, 42, .07);
-      transition: transform .15s, box-shadow .15s;
+      color: #172033;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+      transition: 0.2s;
     }
 
     .card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 14px 35px rgba(15, 23, 42, .13);
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.15);
     }
 
     .icon {
-      font-size: 38px;
-      margin-bottom: 12px;
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
     h2 {
-      font-size: 25px;
-      margin: 0 0 8px;
+      font-size: 28px;
+      margin: 0 0 10px;
     }
 
-    .card p {
+    .description {
       color: #64748b;
-      font-size: 16px;
-      margin: 0 0 20px;
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 22px;
     }
 
     .button {
       display: inline-block;
       background: #2563eb;
       color: white;
-      padding: 10px 15px;
+      padding: 11px 17px;
       border-radius: 10px;
-      font-weight: 800;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
       color: #64748b;
-      font-size: 14px;
-      padding: 0 20px 35px;
+      padding: 20px;
     }
   </style>
 </head>
@@ -120,60 +113,42 @@
 <body>
 
   <header>
-    <div class="wrap">
+    <div class="container">
+      <div class="label">Natuurkunde · 4H</div>
 
-      <div class="eyebrow">
-        Natuurkunde · 4H
+      <h1>Beweging</h1>
+
+      <div class="intro">
+        Kies hieronder een opdracht en ga zelf aan de slag met
+        bewegingen en diagrammen.
       </div>
-
-      <h1>
-        Beweging
-      </h1>
-
-      <p class="intro">
-        Kies hieronder een opdracht en ga zelf aan de slag
-        met bewegingen en diagrammen.
-      </p>
-
     </div>
   </header>
 
-
   <main>
-    <div class="wrap">
 
-      <h2 class="section-title">
-        Opdrachten
-      </h2>
+    <div class="title">
+      Opdrachten
+    </div>
 
-      <div class="grid">
+    <a class="card" href="diagrammen.html">
 
-        <a class="card" href="diagrammen.html">
+      <div class="icon">📈</div>
 
-          <div class="icon">
-            📈
-          </div>
+      <h2>a-t, v-t en x-t diagrammen</h2>
 
-          <h2>
-            a-t, v-t en x-t diagrammen
-          </h2>
-
-          <p>
-            Oefen met het omzetten en interpreteren van
-            a-t-, v-t- en x-t-diagrammen.
-          </p>
-
-          <span class="button">
-            Start opdracht →
-          </span>
-
-        </a>
-
+      <div class="description">
+        Oefen met het omzetten en interpreteren van
+        a-t-, v-t- en x-t-diagrammen.
       </div>
 
-    </div>
-  </main>
+      <span class="button">
+        Start opdracht →
+      </span>
 
+    </a>
+
+  </main>
 
   <footer>
     4H · Denkklassen Natuurkunde
