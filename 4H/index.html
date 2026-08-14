@@ -3,14 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>4H - Diagrammen</title>
-</head>
-<body>
-  <h1>4H - Beweging</h1>
-  <p>Oefenen met a-t, v-t en x-t diagrammen.</p>
 
-  <p>
-    <a href="diagrammen.html">➡️ Open de interactieve diagrammen</a>
-  </p>
+  <title>4H | Natuurkunde</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f7fb;
+      color: #172033;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #172554, #2563eb);
+      color: white;
+      padding: 45px 20px;
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 58px);
+      line-height: 1.05;
+    }
+
+    .intro {
+      font-size: 19px;
+      max-width: 750px;
+      margin-top: 14px;
+      opacity: 0.95;
+    }
+
+    main {
+      padding: 35px 20px 70px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #dbe3ec;
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .card-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition: 0.15s;
+    }
+
+    .card-link:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    .muted {
+      color: #64748b;
+      margin: 0 0 18px;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 11px 17px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .coming {
+      opacity: 0.65;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+      padding: 0 20px 35px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Natuurkunde • 4H</div>
+
+      <h1>Beweging</h1>
+
+      <p class="intro">
+        Denk na, kijk naar de grafiek en ontdek wat er gebeurt.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- OPDRACHT 1 -->
+      <a class="card card-link" href="diagrammen.html">
+        <div class="icon">📈</div>
+
+        <h2>a-t, v-t en x-t diagrammen</h2>
+
+        <p class="muted">
+          Oefenen met het omzetten en interpreteren van
+          a-t-, v-t- en x-t-diagrammen.
+        </p>
+
+        <span class="button">
+          Start opdracht →
+        </span>
+      </a>
+
+
+      <!-- HIER KUN JE LATER NIEUWE OPDRACHTEN ZETTEN -->
+
+      <div class="card coming">
+        <div class="icon">⚙️</div>
+
+        <h2>Nieuwe opdracht</h2>
+
+        <p class="muted">
+          Deze opdracht komt binnenkort.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    4H • Denkklassen Natuurkunde
+  </footer>
+
 </body>
 </html>
