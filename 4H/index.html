@@ -1,130 +1,191 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4H - Beweging</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<title>4H - Natuurkunde</title>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #172033;
-        }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-        .header {
-            background: #2563eb;
-            color: white;
-            padding: 45px 20px;
-        }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+header {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    padding: 50px 25px;
+}
 
-        .header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
+.header-inner {
+    max-width: 1100px;
+    margin: auto;
+}
 
-        .header p {
-            margin: 12px 0 0;
-            font-size: 19px;
-        }
+h1 {
+    margin: 0 0 10px;
+    font-size: 46px;
+}
 
-        main {
-            padding: 40px 20px 60px;
-        }
+header p {
+    margin: 0;
+    font-size: 20px;
+    opacity: 0.9;
+}
 
-        .card {
-            background: white;
-            border: 1px solid #dbe3ec;
-            border-radius: 18px;
-            padding: 35px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        }
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
 
-        .card h2 {
-            margin-top: 0;
-            font-size: 28px;
-        }
+.intro {
+    margin-bottom: 25px;
+}
 
-        .card p {
-            font-size: 17px;
-            line-height: 1.6;
-            color: #52627a;
-        }
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
 
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 24px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 17px;
-            font-weight: bold;
-        }
+.intro p {
+    color: #64748b;
+    font-size: 18px;
+}
 
-        .button:hover {
-            background: #1d4ed8;
-        }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
 
-        .info {
-            margin-top: 25px;
-            padding: 18px;
-            background: #eef6ff;
-            border-radius: 12px;
-            color: #28527a;
-        }
-    </style>
+.card {
+    background: white;
+    border: 1px solid #dbe3ec;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 25px rgba(0,0,0,0.10);
+}
+
+.icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 27px;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.6;
+    min-height: 52px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 12px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 13px 19px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    padding: 30px;
+}
+</style>
 </head>
 
 <body>
 
-    <div class="header">
-        <div class="container">
-            <h1>4H – Beweging</h1>
-            <p>Oefenen met a-t, v-t en x-t diagrammen</p>
-        </div>
+<header>
+    <div class="header-inner">
+        <h1>4H – Natuurkunde</h1>
+        <p>Kies een onderwerp om te oefenen.</p>
+    </div>
+</header>
+
+<main>
+
+    <div class="intro">
+        <h2>Onderwerpen</h2>
+        <p>
+            Kies hieronder het onderwerp waarmee je aan de slag wilt.
+        </p>
     </div>
 
-    <main>
-        <div class="container">
+    <div class="cards">
 
-            <div class="card">
-                <h2>Diagrammen omzetten</h2>
+        <div class="card">
+            <div class="icon">🏃</div>
+            <h3>Beweging</h3>
 
-                <p>
-                    In deze opdracht oefen je met het omzetten en interpreteren
-                    van <strong>a-t</strong>, <strong>v-t</strong> en
-                    <strong>x-t</strong> diagrammen.
-                </p>
+            <p>
+                Oefenen met a-t, v-t en x-t diagrammen
+                en het verband tussen versnelling, snelheid en plaats.
+            </p>
 
-                <p>
-                    Gebruik de interactieve diagrammen om te onderzoeken
-                    hoe versnelling, snelheid en plaats met elkaar samenhangen.
-                </p>
-
-                <a class="button" href="diagrammen.html">
-                    🚀 Open de interactieve diagrammen →
-                </a>
-
-                <div class="info">
-                    <strong>Tip:</strong> Kijk goed naar de helling van een
-                    grafiek en naar de oppervlakte onder een grafiek.
-                </div>
-            </div>
-
+            <a class="button" href="Beweging/index.html">
+                Naar Beweging →
+            </a>
         </div>
-    </main>
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Krachten</h3>
+
+            <p>
+                Dit onderwerp komt binnenkort.
+            </p>
+
+            <a class="button" href="#">
+                Binnenkort →
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔋</div>
+            <h3>Energie</h3>
+
+            <p>
+                Dit onderwerp komt binnenkort.
+            </p>
+
+            <a class="button" href="#">
+                Binnenkort →
+            </a>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    4H • Natuurkunde
+</footer>
 
 </body>
 </html>
